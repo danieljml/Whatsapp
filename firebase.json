@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "build",
+    "preDeloy":["npm run build", "npm build"]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
